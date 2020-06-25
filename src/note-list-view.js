@@ -16,7 +16,6 @@
             array.forEach((note) => {
                 output += `<li><div>${note.returnText()}</div></li>`
             })
-            console.log(`<ul>${output}</ul>`)
             return `<ul>${output}</ul>`
         }
 
