@@ -11,7 +11,7 @@
             return "<ul><li><div></div></li></ul>";
         } else {
             array.forEach((note) => {
-                output += `<li><a href=#${note.id}>${note.returnText().substr(0, 20)}</a><div id=${note.id}></div</li>`;
+                output += `<li><a href=#${note.id}>${note.returnText().substr(0, 20)}</a></li>`;
             });
             return `<ul>${output}</ul>`;
         }
