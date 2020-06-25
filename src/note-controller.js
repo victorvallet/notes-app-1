@@ -17,13 +17,12 @@
     window.addEventListener("hashchange", this.addNoteToHTML);
   };
 
-  NoteController.prototype.getNumber = function (location) {
+  NoteController.prototype.getId = function (location) {
     return location.hash.split("#")[1];
   };
 
   NoteController.prototype.addNoteToHTML = function () {
-    let noteId = this.getNumber(window.location);
-    console.log(noteId);
+    let noteId = this.getId(window.location);
     this.getNoteFromList(noteId);
   };
 
