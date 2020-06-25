@@ -17,5 +17,13 @@
     this.id++;
   };
 
+  NoteList.prototype.getNote = function (id) {
+    for (i = 0; i < this.notes.length; i++) {
+      if (this.notes[i].returnI() === id) {
+        return this.notes[i];
+      }
+    }
+  };
+
   exports.NoteList = NoteList;
 })(this);
