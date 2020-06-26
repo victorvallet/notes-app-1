@@ -3,16 +3,23 @@
 
 <head>
   <meta charset="utf-8" />
-</head>
-
-<body>
-  <div id='app'>hello</div>
 
   <script src="src/note-list-model.js"></script>
   <script src="src/note-list-view.js"></script>
   <script src="src/note-model.js"></script>
   <script src="src/single-note.js"></script>
   <script src="src/note-controller.js"></script>
+</head>
+
+<body>
+  
+  <div id='app'>hello</div>
+  
+  <form action="/notes" method="post" id='form' name="form">
+    <textarea id="textinput" name="textinput" rows="4" cols="10" value=""> </textarea>
+
+    <input type="submit" id="submit">
+  </form>
 </body>
 
 
