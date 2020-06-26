@@ -22,11 +22,7 @@ window.addEventListener(`DOMContentLoaded`, function () {
     controller.getHTML();
 
     window.addEventListener('hashchange', function () {
-        let noteIndex = window.location.hash.slice(-1);
-        let note = controller.noteListModel.returnNote()[noteIndex];
-        console.log(noteIndex);
-        var singlenote = new SingleNote(note);
-
+        var singlenote = new SingleNote(getNote());
         var element = document.getElementById('app');
         element.innerHTML = singlenote.returnsHTML();
     });
@@ -38,4 +34,11 @@ window.addEventListener(`DOMContentLoaded`, function () {
         controller.getHTML();
         console.log(submitEvent);
     };
+
+    function getNote() {
+        let noteIndex = window.location.hash.slice(-1);
+        let note = controller.noteListModel.returnNote()[noteIndex];
+        return note
+
+    }
 });
