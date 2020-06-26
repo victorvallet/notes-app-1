@@ -15,35 +15,10 @@
         ele.innerHTML = this.view.returnHTML();
     };
 
-    // NoteController.prototype.returnNumber = function () {
-    //     return window.location.hash.split("#")[1];
-    // };
-
-    // NoteController.prototype.addNoteToHTML = function () {
-    //     let noteId = window.location.hash.split("#")[1];
-    //     console.log(noteId);
-    //     let singleNote = new SingleNote(this.noteListModel.getNote(0));
-    //     console.log(singleNote)
-    //     getNoteFromList(noteId);
-    // };
-
-    // NoteController.prototype.getNoteFromList = function (noteId) {
-    //     let singleNote = new SingleNote(this.noteListModel.getNote(noteId));
-    //     console.log(singleNote)
-    //     this.displayNote(singleNote);
-    // };
-
-    // NoteController.prototype.displayNote = function (note) {
-    //     let ele = document.getElementById("app");
-    //     ele.innerHTML = note.returnHTML();
-    // };
-
-    // NoteController.prototype.loadNote = function () {
-    //     window.addEventListener("hashchange", this.addNoteToHTML);
-    // };
-
 
     exports.NoteController = NoteController;
+
+
 })(this);
 
 window.addEventListener(`DOMContentLoaded`, function () {
